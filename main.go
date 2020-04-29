@@ -33,7 +33,7 @@ func fakeUser(id string) string {
 	"id": "%s",
 	"first_name": "%s",
 	"last_name": "%s",
-	"age": "%s",
+	"age": %d,
 	"color": "%s",
 	"created_at": "%d",
 	"updated_at": "%d"
