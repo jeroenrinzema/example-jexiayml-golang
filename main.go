@@ -72,7 +72,7 @@ func fakeProduct(id string) string {
 	"id": "%s",
 	"name": "%s",
 	"description": "%s",
-	"price": "%d",
+	"price": %d,
 	"currency": "%s",
 	"color": "%s",
 	"created_at": "%d",
