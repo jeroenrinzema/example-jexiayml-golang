@@ -17,13 +17,13 @@ func user(w http.ResponseWriter, r *http.Request) {
 
 func users(w http.ResponseWriter, r *http.Request) {
 	length := int(gofakeit.Float32Range(2, 10))
-	result := "["
+	result := `{"users":[`
 
 	for i := 0; i < length; i++ {
 		result += fakeUser(gofakeit.UUID()) + ","
 	}
 
-	result = result[:len(result)-1] + "]"
+	result = result[:len(result)-1] + "]}"
 
 	w.Write([]byte(result))
 }
@@ -56,13 +56,13 @@ func product(w http.ResponseWriter, r *http.Request) {
 
 func products(w http.ResponseWriter, r *http.Request) {
 	length := int(gofakeit.Float32Range(5, 20))
-	result := "["
+	result := `{"products":[`
 
 	for i := 0; i < length; i++ {
 		result += fakeProduct(gofakeit.UUID()) + ","
 	}
 
-	result = result[:len(result)-1] + "]"
+	result = result[:len(result)-1] + "]}"
 
 	w.Write([]byte(result))
 }
