@@ -16,7 +16,7 @@ func user(w http.ResponseWriter, r *http.Request) {
 }
 
 func users(w http.ResponseWriter, r *http.Request) {
-	length := int(gofakeit.Float32Range(2, 10))
+	length := 2 // int(gofakeit.Float32Range(2, 10))
 	result := `{"users":[`
 
 	for i := 0; i < length; i++ {
@@ -55,7 +55,7 @@ func product(w http.ResponseWriter, r *http.Request) {
 }
 
 func products(w http.ResponseWriter, r *http.Request) {
-	length := int(gofakeit.Float32Range(5, 20))
+	length := 2 // int(gofakeit.Float32Range(5, 20))
 	result := `{"products":[`
 
 	for i := 0; i < length; i++ {
