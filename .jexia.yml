@@ -1,6 +1,5 @@
 language: golang
 port: 80
 run:
- - sleep 900
  - go build
  - ./sample-go-http
